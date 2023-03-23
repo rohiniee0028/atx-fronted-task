@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronted Task</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div>
+                <image src="images/icon.png" alt="icon" />
+            </div>
+            <div class="nav-2-div">
+                <span>Crytocurrencies</span>
+                <span>Exchanges</span>
+                <span>Community</span>
+                <span>Trades</span>
+            </div>
+
+            <!-- hamburger for small screen -->
+
+            <div id="hamburger" onclick="openBox()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- search- -->
+
+            <div id="search">
+                <img src="images/Vector.png" alt="search" />
+            </div>
+        </nav>
+    </header>
+
+    <!-- creating nav modal for small screen -->
+
+    <div id="side-modal">
+        <div id="nav-modal">
+            <div>
+                <span>Crytocurrencies</span>
+                <span>Exchanges</span>
+                <span>Community</span>
+                <span>Trades</span>
+            </div>
+            <span style='font-size:20px;' onclick="closeBox()">&#10006;</span>
+        </div>
+    </div>
+
+    <!-- header-para -->
+
+    <div class="section-div">
+        <p class="para-1">Today's Cryptocurrency Prices By Market Cap</p>
+        <p class="para-2">The global cryptocurrency market cap today is <span
+                style="color:#14FF00; font-weight:bold">$811.7B</span>, a <span
+                style="color: #FF0000; font-weight:bold;">&#8595 0.17%</span> decrease in the last 24 hours.</p>
+    </div>
+
+    <!-- table section -->
+
+    <table class="section-div">
+        <thead>
+            <tr>
+                <th id="name">Name</th>
+                <th>Price</th>
+                <th>24h Change </th>
+                <th>Chart</th>
+                <th>Marketcap</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+    <Button id="view-btn">View All</Button>
+
+    <div id="map-section">
+        <div id="padded-section" class="section-div">
+            <div id="map">
+                <div id="div-map-inside">
+                    <div class="map-same countries">
+                        <img src="images/img1.png" alt="img1" width="25px" height="25px" />
+                        <span>198+ Countries</span>
+                    </div>
+                    <div id="map-images-div">
+                        <img src="images/shibu.png" alt="bitcoin" width="40px" height="40px" />
+                        <img src="images/img2.png" alt="diamond" width="40px" height="40px" />
+                    </div>
+                    <div class="map-same trades">
+                        <img src="https://as1.ftcdn.net/v2/jpg/02/55/85/12/500_F_255851262_j7loPqZKMmdYFaXsXzqD64ljU3iZmHRM.jpg"
+                            alt="user-img" width="30px" height="30px" />
+                        <span>20 Million+ Trades</span>
+                    </div>
+                    <span style="display:flex; gap:20px;align-items: center;">
+                        <div class="map-same pairs">
+                            <img src="images/img3.png" alt="img3" width="25px" height="25px" />
+                            <span>350+ Trading Pairs</span>
+                        </div>
+                        <img src="images/Bitcoin.png" alt="bitcoin" style="align-self: flex-end;" width="40px"
+                            height="40px" />
+                    </span>
+                </div>
+            </div>
+            <div id="side-content">
+                <div id="header-div">
+                    <p id="header-para">We are the most trusted
+                        Cryptocurrency Platform
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc vulputate libero et velit interdum, ac aliquet odio
+                        mattis.
+                    </p>
+                    <div class="flex-div">
+                        <div class="icons-flex">
+                            <img src="images/eye.png" alt="eye" width="30px" height="20px" />
+                        </div>
+                        <div>
+                            <p class="text-fonts">Clarity</p>
+                            <p class="para-fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-div">
+                        <div class="icons-flex">
+                            <img src="images/tick.png" alt="tick" width="25px" height="30px" />
+                        </div>
+                        <div>
+                            <p class="text-fonts">Confidence</p>
+                            <p class="para-fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-div">
+                        <div class="icons-flex">
+                            <img src="images/users.png" alt="users" width="25px" height="25px" />
+                        </div>
+                        <div>
+                            <p class="text-fonts">Community</p>
+                            <p class="para-fonts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- invest-section -->
+
+    <div id="invest" class="section-div">
+        <div class="left-div-invest">
+            <p id="invest-para">
+                Reason to invest in
+                <br />
+                Cryptocurrency in 2022
+            </p>
+            <br />
+            <div class="flex-invest">
+                <img src="images/right.png" alt="right" width="30px" height="30px" />
+                <div class="para-div">
+                    <p>Buying Bitcoin in legal</p>
+                    <p class="width-para-div">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        Class aptent taciti sociosqu ad.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-invest">
+                <img src="images/right.png" alt="right" width="30px" height="30px" />
+                <div class="para-div">
+                    <p>High return potential </p>
+                    <p class="width-para-div">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        Class aptent taciti sociosqu ad.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-invest">
+                <img src="images/right.png" alt="right" width="30px" height="30px" />
+                <div class="para-div">
+                    <p>Growing alternative assest class</p>
+                    <p class="width-para-div">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                        Class aptent taciti sociosqu ad.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right-div-invest">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <img src="images/curves.png" alt="curve1" class="image-curve" />
+            <img src="images/curves2.png" alt="curve2" class="image-curve" />
+            <img src="images/curves3.png" alt="curve3" class="image-curve" />
+            <img src="images/curves4.png" alt="curve4" class="image-curve" />
+            <img src="images/curves5.png" alt="curve5" class="image-curve" />
+            <div id="upside-div">
+                <p id="portfolio-para">Your portfolio is <span style="color:#00FF47">up 2.13%</span></p>
+                <div class="upside-div-inside">
+                    <div class="invest-icon-flex">
+                        <img src="images/bitcoin-logo.png" alt="bitcoin" width="60px" height="60px" />
+                        <div>
+                            <p class="icon-p">Bitcoin</p>
+                            <p class="abbr-p">BTC</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uparrow">1.33% &#8593</p>
+                    </div>
+                </div>
+                <div class="upside-div-inside">
+                    <div class="invest-icon-flex">
+                        <img src="images/ethereium-logo.png" alt="ethereium" width="60px" height="60px" />
+                        <div>
+                            <p class="icon-p">Ethereum</p>
+                            <p class="abbr-p">ETH</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uparrow">2.14% &#8593</p>
+                    </div>
+                </div>
+                <div class="upside-div-inside">
+                    <div class="invest-icon-flex">
+                        <img src="images/litecoin-logo.png" alt="litecoin" width="60px" height="60px" />
+                        <div>
+                            <p class="icon-p">Litecoin</p>
+                            <p class="abbr-p">LTC</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uparrow">0.81% &#8593</p>
+                    </div>
+                </div>
+                <div class="upside-div-inside">
+                    <div class="invest-icon-flex">
+                        <img src="images/bitcoin-logo.png" alt="bitcoin" width="60px" height="60px" />
+                        <div>
+                            <p class="icon-p">Bitcoin</p>
+                            <p class="abbr-p">BTC</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uparrow">1.33% &#8593</p>
+                    </div>
+                </div>
+                <div class="upside-div-inside">
+                    <div class="invest-icon-flex">
+                        <img src="images/ethereium-logo.png" alt="ethereium" width="60px" height="60px" />
+                        <div>
+                            <p class="icon-p">Ethereum</p>
+                            <p class="abbr-p">ETH</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uparrow">2.14% &#8593</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer-section -->
+
+    <div id="footer-flex" class="small-section footer">
+        <div id="footer-left">
+            <img src="images/icon.png" alt="footer-icon" width="310px" height="40px" />
+            <p id="footer-para">CoinIntention's mission is to make investing in cryptocurrencies easy and efficient.
+                CoinIntention tracks various data of cryptocurrencies and thus offers its users an overview of all
+                cryptocurrencies available on the market and their performance, market capitalization, trading
+                volume, etc.</p>
+        </div>
+        <div id="footer-right">
+            <div class="columns">
+                <p>Company</p>
+                <ul class="ul-list">
+                    <li>About us</li>
+                    <li>Terms of use</li>
+                    <li>Privacy Policy</li>
+                    <li>Community Rules</li>
+                    <li>Disclaimer</li>
+                    <li>Methodology</li>
+                </ul>
+            </div>
+            <div class="columns">
+                <p>Support </p>
+                <ul class="ul-list">
+                    <li>Requested Form</li>
+                    <li>Contact Support</li>
+                    <li>FAQ's</li>
+                    <li>Glossary</li>
+                </ul>
+            </div>
+            <div class="columns">
+                <p>Socials</p>
+                <ul class="ul-list">
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                    <li>Telegram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="last-line">© 2021-2023 CoinIntention. All rights reserved.</div>
+
+</body>
+
+</html>
+<script src="index.js"></script>
